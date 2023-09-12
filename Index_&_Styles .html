@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(0,0,33);
+            color: white;
+            font-family: 'Poppins' , sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            height: 80px;
+            background-color: rgb(18, 18, 62); 
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(153, 153, 190);
+            font-size: 1.01 rem;
+        }
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+
+        }
+        .left {
+            font-size:  1.5rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+        .firstSection > div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .buttons {
+            padding:  50px 0;
+        }
+
+        .leftSection .btn {
+          padding: 12px;
+          background: #1e2167;
+          color: white;
+          border: 2px solid white;
+          border-radius: 6px;
+          font-size: 20px;
+          cursor: pointer;
+
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: blueviolet;
+
+        }
+        
+        .text-grey {
+            color: grey;
+        }
+
+        .text-black {
+            color: #0e0e1a;
+        }
+
+        #element {
+            color: blueviolet;
+
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+
+        }
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+
+        }
+
+        .footer-first {
+            background-color:#0e0e1a;
+            height: 390px;
+            margin: 23px 122px;
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+            justify-content: left;
+        }
+
+        .footer-right {
+            display: flex;
+            width: 90px;
+            height: 90px;
+            float: right;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            border-radius: 50%;
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer > div {
+            width: 223px;
+
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 9px 0;
+
+        }
+
+        .img-1 {
+            border-radius: 50%;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .thirdSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .thirdSection .vertical {
+            height: 185px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+
+        }
+
+        .secondSection {
+            font-size: 1.9rem;
+        }
+
+        .h2 {
+            color: grey;
+        }
+
+        .image6 {
+            width: 100px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .fourthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .fourthSection .btn {
+          padding: 12px;
+          position: absolute;
+          left: 40%;
+          transform: translateX(-50%);
+          background: #1e2167;
+          color: white;
+          border: 2px solid white;
+          border-radius: 6px;
+          font-size: 20px;
+          cursor: pointer;
+
+        }
+
+        .fifthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .img-5 {
+            width: 400px;
+            padding: 120px;
+            position: left;
+
+        }
+
+        .right-text {
+
+            position: absolute;
+            top: 950px;
+            right: 250px;
+            font-size: 25px;
+
+        }
+
+        .vertical-desc1 {
+            position: relative;
+            color: grey;
+            top: 26px;
+            width: 420px;
+            font-size: 15px;
+
+        }
+
+        .images {
+            border-radius: 50%;
+        }
+
+        .devimg {
+            max-width: 600px;
+            height: 400px;
+            
+        }
+
+        .flag {
+            border-radius: 50%;
+        }
+
+        .imgw {
+            width: 90px;
+            height: 90px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="left"><i>Rohan Vohra</i></div> 
+            <div class="right">
+                <ul>
+                <li><a href="/">About</li></a>
+                <li><a href="/">Services</li></a>
+                <li><a href="/">Projects</li></a>
+                <li><a href="/">Contact Me</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Rohan</span>
+                <div>and I am a </div>
+                <span id="element"></span>
+                <div><span>
+                    <img class="img-1" src="images\download2 (1).jpg" alt="image-1">
+                    <img src="images\download 3.jpg" alt="img-1" class="img-1">
+                    <img src="images\download4.jpg" alt="img-2" class="img-1">
+                    <img src="images\download 5.jpg" alt="img-3" class="img-1">
+                </span>
+                </div>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+              <img src="images\istockphoto-1393824832-612x612.jpg" alt="image.png"  class="devimg">
+            </div>
+        </section>
+        <hr>
+        <section class="fifthSection">
+            <img src="images\Premium Vector _ Men play laptops.jpeg" alt="img5" class="img-5">
+            <div class="right-text">
+                <h1>Skills & Expertise</h1>
+                <div class="vertical-desc1">
+                    <span> As a Web Developer I have a passion for turning innovative ideas into functional, visually appealing, and responsive digital experiences.
+                        Here some of the programming Languages that I have learnt:-
+                    </span>
+                </div>
+                <br>
+                <div> 
+                 <span>
+                   <img src="images\images.jpg" alt="img" class="images">
+                   <img src="images\images-2.jpg" alt="img" class="images">
+                   <img src="images\images-3 (1).jpg" alt="img" class="images">
+                   <br>
+                   <img src="images\Html-Logo.jpg" alt="img" class="images">
+                   <img src="images\images (2).jpg" alt="img" class="images">
+                   <img src="images\python-logo.jpg" alt="img" class="images">
+                 </span>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <section class="thirdSection">
+            <h1>Achievements & Certification &#127942;</h1>
+            <div class="h2">Achievements & Certification of Courses That I have Done So Far</div>
+            <br>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image6" src="images\download 6.jpeg" alt="image1">
+                     <div class="vertical-title">
+                         Certificate of Excellence
+                     </div>
+                    <div class="vertical-desc">
+                     This Certificate was Awarded to me for Completing the Basic concepts and Topics In Cpp programming.
+                     During this Part of Course I learnt many imp concepts based on string , Arrays & Sorting Techniques.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image6" src="images\download 6.jpeg" alt="image1">
+                     <div class="vertical-title">
+                         Certificate of Completion
+                     </div>
+                    <div class="vertical-desc">
+                      This Certificate was Awarded to me for Completing the Dsa portion Of Cpp programming.
+                      During Which I learnt imp concepts like pointers,recursion & trees. 
+                    </div>
+                </div>
+        </section>
+        <hr>
+        <section class="fourthSection">
+            <h1>Open Source Projects</h1>
+            <div>
+                <br>
+                <img src="images\Screenshot 2023-09-01 185526.jpg" alt="project-1" class="class">
+                <br>
+                <div class="buttons">
+                    <button class="btn">More Projects</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="secondSection">
+            <span class="text-grey"> What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="imgw" src="images\channels4_profile.jpg" alt="img">
+                     <div class="vertical-title">
+                         Code Studio
+                     </div>
+                    <div class="vertical-desc">
+                      Made a Youtube Channel named Code Studio created some exciting stuff for the Audience.
+                      The motive of this Channel to explain Basic Visual Studio Realted Features.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="imgw" src="images\1685777114980.jpeg" alt="image1">
+                     <div class="vertical-title">
+                         Web Developer Intern
+                     </div>
+                    <div class="vertical-desc">
+                      Made exciting projects and tasks like Landing page of a travel website & representation of a stylish calculator
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <br>
+        <hr>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [ 'Graphic Designer','Video Editor' , 'Web Developer'],
+          typeSpeed: 50,
+        });
+    </script>
+    <br>
+    <footer>
+        <div class="footer-first">
+            <h1>Reach Out to me!</h1>
+            <span class="text-grey">DICUSS A PROJECT OR JUST WANT TO SAY HI MY INBOX IS OPEN FOR ALL</span>
+            <div>
+            <br>
+            <span>"Web Developer | Open source Contributer | Graphic Designer
+            <div>
+            <br>
+            Contact Me:-<div>
+            Ph no-8076609310
+            </div>
+            Email id-rvohra356@gmail.com
+            </div>
+            <br>
+            <!--<i class="fas fa-map-marker-alt">&#f3c5;</i>-->
+             <span>New Delhi , Bharat <img src="images\flag (1).jpg" alt="flag" class="flag">  </span>
+            </span>
+            </div>
+            <br>
+
+            <div><span>
+                <img class="img-1" src="images\download2 (1).jpg" alt="image-1">
+                <img src="images\download 3.jpg" alt="img-1" class="img-1">
+                <img src="images\download4.jpg" alt="img-2" class="img-1">
+                <img src="images\download 5.jpg" alt="img-3" class="img-1">
+            </span>
+            </div>
+            <section class="sixthSection">
+            <div class="footer-right">
+                <img src="images\My Image (2).jpg" alt="img" class="footer-right"> 
+            </div>
+            </section>
+        </div>
+
+            <div class="footer-rights">
+             Copyright &copy; www.rohan'sportfolio.com | All rights reserved
+            </div>
+    </footer>
+</body>
+</html>
